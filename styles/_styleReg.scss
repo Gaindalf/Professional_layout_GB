@@ -1,0 +1,123 @@
+.registration {
+    background-color: $reg-pink;
+
+    &__block {
+        margin: 0 auto;
+        width: 1140px;
+        min-height: 148px;
+        display: flex;
+        align-items: center;
+    }
+    &__header {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: $dark-pink;
+    }
+}
+
+.main {
+
+    &__fields {
+        display: flex;
+    }
+
+    &__form {
+        margin: 64px 0 0 0;
+
+        &-name,
+        &-email,
+        &-sername,
+        &-password {
+            margin: 0 0 20px 0;
+            padding-left: 17px;
+            width: 360px;
+            min-height: 45px;
+            display: block;
+            border: 1px solid $reg-grey;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &-female,
+        &-male {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            margin: 15px 10px 35px 0;
+        }
+
+        &-button {
+            width: 167px;
+            min-height: 50px;
+            background-color: $dark-pink;
+            border: none;
+            text-transform: uppercase;
+            color: $white;
+            margin: 0 0 96px 0;
+        
+            &-img {
+                margin: 0 0 0 20px;
+            }   
+        }
+    }
+
+    &__legend {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;  
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        color: $dark-gray;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        width: 360px;
+        margin: 0 0 40px 0;
+    }
+
+    &__header {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        margin: 64px 0 22px 0;
+    }
+
+    &__loyalty {
+        margin: 0 0 0 128px;
+        
+        &-text {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0 0 21px 0;
+        }
+
+        &-list {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &-item {
+            position: relative;
+            margin: 0 0 16px 40px;
+            
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 5px;
+                left: -40px;
+                background-image: url(img/vector.svg);
+                background-size: 20px 20px;
+            }                       
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.promo {
+    display: flex;
+    width: 1600px;
+
+    &__heading {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+
+        &-wrapper {
+            background-color: $pink;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 92px;
+        }
+    }
+
+    &__sub-heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        display: block;
+
+        &-pink {
+            color:$dark-pink;
+        }
+    }
+}

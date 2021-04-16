@@ -1,0 +1,128 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__heading {
+        align-self: center;
+        margin: 97px 0 0 0;
+        font-size: 30px;
+        line-height: 36px;
+        color: $dark-blue;
+    }
+
+    &__text {
+        align-self: center;
+        margin: 6px 0 0 0;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 48px 0 0 0;
+    }
+
+    &__item {
+        width: 360px;
+        margin: 0 0 30px 0;
+        background-color: $background-color-li;
+
+        &-img-block {
+            height: 420px;
+            background-color: $black;
+            position: relative;
+        }
+
+        &-button {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            width: 138px;
+            height: 43px;
+            margin: -1px;
+            padding: 0;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            border: 1px solid $white;
+            clip: rect(0 0 0 0);
+            color: $white;
+            z-index: 1;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        &-img-block:hover .products__item-button,
+        &-img:hover+.products__item-button {
+            position: absolute;
+            width: 138px;
+            height: 43px;
+            margin: -1px;
+            padding: 0;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow:visible;
+            border: 1px solid $white;
+            clip: rect(0 400px 400px 0);
+            color: $white;
+            z-index: 1;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        &-img-block-icon {
+            fill:$white;
+        }
+
+        &-img-block:hover .products__item-img {
+            opacity: 0.25;
+        }
+
+        &-img:hover {
+            opacity: 0.25;
+        }
+
+        &-heading {
+            margin: 25px 0 0 18px;
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 13px 18px 0 18px;
+            color: $dark-gray;
+        }
+
+        &-price {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $dark-pink;
+            margin: 18px 0 20px 18px;
+        }
+    }
+
+    &__button {
+        margin: 48px 0 95px 0;
+        width: 211px;
+        height: 47px;
+        align-self: center;
+        border: 1px solid $dark-pink;
+        background-color: $white;
+        font-weight: 400;
+        color:$dark-pink;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
