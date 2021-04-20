@@ -1,0 +1,188 @@
+.footer {
+    background-color: $background-color-li;
+
+    &__subscribe {
+        background-color: $background-color-li;
+        
+        &-block {
+            background-image: url(img/footer.jpg);
+            width: 1600px;
+            min-height: 448px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-size: cover;
+
+            @include tablet {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        &-block-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include tablet {
+                padding: 64px 0 0 0;
+            }
+        }
+
+        &-img {
+            margin: 0 0 30px 0;
+            width: 100px;
+        }
+
+        &-text {
+            width: 360px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+
+            @include tablet {
+                padding: 0 0 48px 0;
+            }
+
+            @include mobile {
+                padding: 0 0 48px 0;
+                width: 92%;
+            }
+        }
+
+        &-header {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            text-transform: uppercase;
+        }
+
+        &-block-right {
+            width: 557px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include mobile {
+                width: 100%;
+
+            }
+        }
+
+        &-right-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
+
+            @include mobile {
+                width: 72%;
+                text-align: center;
+            }
+        }
+            
+        &-form {
+            display: flex;
+
+            @include tablet {
+                margin: 0 0 219px 0;
+            }
+
+            @include mobile {
+                margin: 0 0 109px 0;
+                width: 92%;
+            }
+            
+        }
+
+        &-input {
+            width: 250px;
+            min-height: 50px;
+            background-color: $input-grey;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            padding-left: 25px;
+        }
+
+        &-button {
+            border:none;
+            background-color: $dark-pink;
+            color: $white;
+            border-radius: 0 25px 25px 0;
+            width: 85px;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+        }
+    }
+
+    &__rights {
+        background-color: $black;
+        
+        &-block {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            min-height: 79px;
+            align-items: center;
+            width: 100%;
+
+            @include mobile {
+                flex-direction: column-reverse;
+                min-height: 143px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $rigths;
+        margin: 0 0 0 32px;
+
+        @include mobile {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__icon-block {
+        display: flex;
+        margin: 0 32px 0 0;
+
+        @include mobile {
+            margin: 43px 0 0 0;
+        }
+    }
+
+    &__icon-item {
+        width: 32px;
+        min-height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        margin: 0 4px;
+    
+        &:hover {
+            background-color: $dark-pink;
+            
+            & .footer__facebook,
+            & .footer__instagram,
+            & .footer__pinterest,
+            & .footer__twetter {
+                fill: $white;
+            }
+        }
+    }
+
+    &__facebook,
+    &r__instagram,
+    &__pinterest,
+    &__twetter {
+        fill: $black;
+    }
+}
