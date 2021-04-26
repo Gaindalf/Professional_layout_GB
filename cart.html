@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleReg.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
@@ -44,7 +42,7 @@
                                         href="#">T-Shirts</a></li>
                             </ul>
                         </li>
-                        <li class="header__navigation-item navigation-item">
+                        <li>
                             <a class="navigation-item__link" href="#">woman</a>
                             <ul class="navigation-item__sub-list">
                                 <li class="navigation-item__sub-item"><a class="navigation-item__sub-item-link"
@@ -59,7 +57,7 @@
                                         href="#">Shirts</a></li>
                             </ul>
                         </li>
-                        <li class="header__navigation-item navigation-item">
+                        <li>
                             <a class="navigation-item__link" href="#">kids</a>
                             <ul class="navigation-item__sub-list">
                                 <li class="navigation-item__sub-item"><a class="navigation-item__sub-item-link"
@@ -78,33 +76,35 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="header__link">
+                <a href="#" class="header__link header__link--mobile-hidden">
                     <img src="img/silhouette.svg" alt="silhouette" width="32" height="23">
                 </a>
-                <a href="#" class="header__link">
+                <a href="#" class="header__link header__link--mobile-hidden">
                     <img src="img/basket.svg" alt="basket" width="32" height="23">
                 </a>
             </div>
         </div>
-        <section class="registration">
-            <div class="registration__block">
-                <h1 class="registration__header">shopping cart</h1>
-            </div>
-        </section>
     </header>
+    <section class="registration">
+        <div class="registration__block">
+            <h1 class="registration__header">shopping cart</h1>
+        </div>
+    </section>
     <main class="main">
         <section class="container cart">
-            <div class="cart__elemants">
+            <div class="cart__elements">
                 <div class="cart__elem">
                     <div class="cart__elem-photo">
                         <img src="img/cart/cart-item-first.jpg" alt="man with hat">
                     </div>
                     <div class="cart__elem-discription">
-                        <svg class="cart__elem-chest" width="18" height="18" viewBox="0 0 18 18"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
-                        </svg>
+                        <a href="#">
+                            <svg class="cart__elem-chest" width="18" height="18" viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                            </svg>
+                        </a>
                         <h2 class="cart__elem-heading">Mango people t-shirt</h2>
                         <ul class="cart__elem-list">
                             <li class="cart__elem-list-item">Price: <span class="cart__elem-item-price">$300</span></li>
@@ -120,11 +120,13 @@
                         <img src="img/cart/cart-item-second.jpg" alt="man with hat">
                     </div>
                     <div class="cart__elem-discription">
-                        <svg class="cart__elem-chest" width="18" height="18" viewBox="0 0 18 18"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
-                        </svg>
+                        <a href="#">
+                            <svg class="cart__elem-chest" width="18" height="18" viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                            </svg>
+                        </a>
                         <h2 class="cart__elem-heading">Mango people t-shirt</h2>
                         <ul class="cart__elem-list">
                             <li class="cart__elem-list-item">Price: <span class="cart__elem-item-price">$300</span></li>
@@ -136,24 +138,27 @@
                     </div>
                 </div>
                 <div class="cart__buttons">
-                    <button class="cart__button" type="button">Clear shopping cart</button>
-                    <button class="cart__button" type="button">Continue shopping</button>
+                    <button class="cart__buttons-item" type="button">Clear shopping cart</button>
+                    <button class="cart__buttons-item" type="button">Continue shopping</button>
                 </div>
             </div>
             <div class="cart__form">
                 <form action="">
-                    <fieldset>
+                    <fieldset class="cart__form-fieldset">
                         <legend class="cart__form-legend">Shipping adress</legend>
                         <input class="cart__form-input" type="text" placeholder="Bangladesh">
                         <input class="cart__form-input" type="text" placeholder="State">
                         <input class="cart__form-input" type="text" placeholder="Postcode / Zip">
-                        <button class="cart__form-button"></button>
+                        <button class="cart__form-button">Get a quote</button>
                     </fieldset>
                 </form>
                 <div class="cart__total">
-                    <h3 class="cart__total-sub-sum"></h3>
-                    <h2 class="cart__total-sum"></h2>
-                    <hr>
+                    <h3 class="cart__total-sub-sum">Sub total <span class="cart__total-sub-sum--price">$900</span></h3>
+                    <h2 class="cart__total-sum">Grand total <span class="cart__total-sum--price">$900</span></h2>
+                    <svg class="cart__total-line" width="275" height="1" viewBox="0 0 275 1" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M275 0H0V1H275V0Z" fill="#E2E2E2" />
+                    </svg>
                     <button class="cart__total-proceed-button">Proceed to checkout</button>
                 </div>
             </div>
@@ -162,12 +167,12 @@
     <footer class="footer">
         <section class="footer__subscribe">
             <div class="footer__subscribe-block">
-                <div class="footer__subscribe-block-quote">
+                <div class="footer__subscribe-block-left">
                     <img class="footer__subscribe-img" src="img/face.png" alt="face">
                     <p class="footer__subscribe-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
                         pulvinar purus condimentum“</p>
                 </div>
-                <div class="footer__subscribe-block-form">
+                <div class="footer__subscribe-block-right">
                     <h3 class="footer__subscribe-header">subscribe</h3>
                     <p class="footer__subscribe-right-text">for our newletter and promotion</p>
                     <div class="footer__subscribe-form">

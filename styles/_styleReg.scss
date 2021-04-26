@@ -21,10 +21,22 @@
 
     &__fields {
         display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__form {
         margin: 64px 0 0 0;
+        
+        @include tablet {
+            margin: 40px 0 0 0;
+        }
+
+        @include mobile {
+            margin: 0 0 0 0;
+        }
 
         &-name,
         &-email,
@@ -58,9 +70,13 @@
             color: $white;
             margin: 0 0 96px 0;
         
+            @include mobile {
+                margin: 0 0 40px 0;
+            }
+            
             &-img {
                 margin: 0 0 0 20px;
-            }   
+            }
         }
     }
 
@@ -81,27 +97,50 @@
     }
 
     &__header {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font(24px, 29px, 300);
         text-transform: uppercase;
         margin: 64px 0 22px 0;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+
+        
+        @include mobile {
+            margin: 0 0 22px 0;
+        }
     }
 
     &__loyalty {
         margin: 0 0 0 128px;
+
+        @include tablet {
+            margin: 0 0 0 22px;
+        }
+        
+        @include mobile {
+            margin: 0 0 0 0;
+        }
         
         &-text {
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
+            @include font(24px, 29px, 300);
             margin: 0 0 21px 0;
+
+            @include tablet {
+                @include font(16px, 19px, 300);
+            }
         }
 
         &-list {
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
+            @include font(24px, 29px, 300);
+
+            @include tablet {
+                @include font(16px, 19px, 300);
+            }
+
+            @include mobile {
+                margin: 0 0 100px 0;
+            }
         }
 
         &-item {
