@@ -1,0 +1,68 @@
+.header {
+    background-color: $dark-blue;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+        
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        min-height: 75px;
+        position: relative;
+
+        &:hover+.header__navigation {
+            display: block;
+            position: absolute;
+        }
+    
+        &:hover .header__button-img {
+            fill: $dark-pink;
+        }
+    
+        &-img {
+            fill: $white;
+        }
+    }
+
+    &__navigation {
+        content: '';
+        display: none;
+        background-color: $white;
+        width: 232px;
+        min-height: 765px;
+
+        &:hover {
+            display: block;
+            position: absolute;
+            width: 232px;
+            min-height: 765px;
+            background-color: $white;
+        }
+
+        &-list {
+            margin: 24px 0 0 34px;
+        }
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__link {
+        margin: 0 0 0 34px;
+        text-decoration: none;
+    }
+
+    &__title {
+        margin: 37px 0 0 34px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+}
