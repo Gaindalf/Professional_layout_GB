@@ -12,12 +12,22 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            background-size: cover;
+
+            @include tablet {
+                flex-direction: column;
+                width: 100%;
+            }
         }
 
         &-block-left {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include tablet {
+                padding: 64px 0 0 0;
+            }
         }
 
         &-img {
@@ -31,6 +41,15 @@
             font-size: 20px;
             line-height: 24px;
             font-weight: 400;
+
+            @include tablet {
+                padding: 0 0 48px 0;
+            }
+
+            @include mobile {
+                padding: 0 0 48px 0;
+                width: 92%;
+            }
         }
 
         &-header {
@@ -45,6 +64,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include mobile {
+                width: 100%;
+
+            }
         }
 
         &-right-text {
@@ -53,10 +77,24 @@
             line-height: 30px;
             text-transform: uppercase;
             margin: 0 0 15px 0;
+
+            @include mobile {
+                width: 72%;
+                text-align: center;
+            }
         }
             
         &-form {
             display: flex;
+
+            @include tablet {
+                margin: 0 0 219px 0;
+            }
+
+            @include mobile {
+                margin: 0 0 109px 0;
+                width: 92%;
+            }
         }
 
         &-input {
@@ -87,9 +125,14 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            width: 1140px;
             min-height: 79px;
             align-items: center;
+            width: 100%;
+
+            @include mobile {
+                flex-direction: column-reverse;
+                min-height: 143px;
+            }
         }
     }
 
@@ -98,10 +141,20 @@
         line-height: 19px;
         font-weight: 400;
         color: $rigths;
+        margin: 0 0 0 32px;
+
+        @include mobile {
+            margin: 0 0 10px 0;
+        }
     }
 
     &__icon-block {
         display: flex;
+        margin: 0 32px 0 0;
+
+        @include mobile {
+            margin: 43px 0 0 0;
+        }
     }
 
     &__icon-item {

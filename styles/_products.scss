@@ -3,12 +3,25 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    @include mobile {
+        align-items: center;
+        justify-content: center;
+    }
+
     &__heading {
         align-self: center;
         margin: 97px 0 0 0;
         font-size: 30px;
         line-height: 36px;
         color: $dark-blue;
+
+        @include tablet {
+            margin: 155px 0 0 0;
+        }
+
+        @include mobile {
+            margin: 64px 0 0 0;
+        }
     }
 
     &__text {
@@ -24,6 +37,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 48px 0 0 0;
+        align-self: center;
+
+        @include tablet {
+            margin: 72px 0 0 0;
+            align-items: center;
+            justify-content: center;
+            width: 375px;
+        }
+
+        @include mobile {
+            margin: 65px 0 0 0;            
+        }n
     }
 
     &__item {
@@ -114,7 +139,7 @@
     }
 
     &__button {
-        margin: 48px 0 95px 0;
+        margin: 18px 0 95px 0;
         width: 211px;
         height: 47px;
         align-self: center;
@@ -124,5 +149,13 @@
         color:$dark-pink;
         font-size: 16px;
         line-height: 19px;
+
+        @include tablet {
+            margin: 2px 0 78px 0;
+        }
+
+        @include mobile {
+            margin: 11px 0 95px 0;
+        }
     }
 }
