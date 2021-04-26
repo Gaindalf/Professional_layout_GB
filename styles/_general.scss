@@ -1,0 +1,50 @@
+    $dark-blue: #222222;
+    $pink: #F1E4E6;
+    $dark-pink: #F16D7F;
+    $grey: #9F9F9F;
+    $black: #000000;
+    $dark-gray: #5D5D5D;
+    $background-color-li: #F8F8F8;
+    $white: #ffffff;
+    $rigths: #FBFBFB;
+    $input-grey: #E1E1E1;
+    $il-grey: #6F6E6E;
+    $reg-pink: #F8F3F4;
+    $reg-grey: #A4A4A4;
+    $desktop-width: 768px;
+    $tablet-width: 375px;
+    $dark-grey-cart: #575757;
+
+body {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+@media (max-width: $desktop-width){
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width: $tablet-width){
+    .container {
+        width: 92%;
+    }
+}

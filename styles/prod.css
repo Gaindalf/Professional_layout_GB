@@ -1,0 +1,16 @@
+.main__free-space {
+  margin: 0 0 98px 0;
+}
+
+.carousel-item-img {
+  margin: 0 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(42, 42, 42, 0.15);
+  fill: #000;
+}
+/*# sourceMappingURL=prod.css.map */
