@@ -1962,15 +1962,6 @@ table {
   }
 }
 
-.container--catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .catalog__page-numbers {
   width: 282px;
   height: 43px;
@@ -1995,5 +1986,14 @@ table {
 
 .catalog__page-number {
   color: #F16D7F;
+}
+
+.container--catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
