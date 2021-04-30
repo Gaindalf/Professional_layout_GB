@@ -1,0 +1,266 @@
+.registration {
+
+    @include mobile {
+        margin: 0 0 39px 0;
+    }
+
+    &__block {
+        width: 1140px;
+        display: flex;
+
+        @include tablet {
+            width: $desktop-width;
+        }
+
+        @include mobile {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        align-items: center;
+    }
+
+    &__elements {
+        width: 100%;
+    }
+
+    &__elem {
+        display: flex;
+        width: 652px;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        margin: 64px 0 40px 0;
+        background-color: #fff;
+        height: 306px;
+
+        @include mobile {
+            width: 100%;
+            height: 188px;
+        }
+
+        &-photo {
+            width: 285px;
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                height: auto;
+                width: 40%;
+            }
+        }
+    }
+
+    &__elem-discription {
+        width: 390px;
+        padding: 0 0 0 31px;
+        position: relative;
+
+        @include mobile {
+            width: 60%;
+            padding: 0 0 0 17px;
+        }
+    }
+
+    &__elem-chest {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+
+        @include mobile {
+            width: 10px;
+            height: 10px;
+            top: 17px;
+            right: 12px;
+        }
+    }
+
+    &__elem-heading {
+        color: $dark-blue;
+        display: block;
+        width: 210px;
+        margin: 22px 0 42px 0;
+        @include font(24px, 29px);
+        text-transform: uppercase;
+
+        @include mobile {
+            margin: 13px 0 25px 0;
+            width: 130px;
+            @include font(16px, 19px);
+        }
+    }
+
+    &__elem-list {
+        @include font(22px, 26px);
+        color: $dark-grey-cart;
+
+        @include mobile {
+            @include font(14px, 17px);
+        }
+    }
+
+    &__elem-item-price {
+        color: $dark-pink;
+    }
+
+    &__elem-item-quantity {
+        border: 1px solid $grey;
+        padding: 0 15px;
+        margin: 0 0 0 25px;
+    }
+
+    &__buttons {
+        width: 652px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 129px 0;
+
+        @include tablet {
+            justify-content: space-around;
+        }
+
+        @include mobile {
+            width: 95%;
+            margin: 0 0 48px 0;
+        }
+
+        &-item {
+            width: 225px;
+            height: 50px;
+            background-color: $white;
+            @include font(14px, 17px, 300);
+            text-transform: uppercase;
+            border-color: $reg-grey;
+
+            @include mobile {
+                width: 46%;
+                height: 32px;
+                @include font(12px, 14px, 400);
+                text-transform: none;
+            }
+        }
+    }
+
+    &__form {
+        margin: 64px 0 0 0;
+
+        @include tablet {
+            display: flex;
+            margin: 0 0 140px 0;
+
+            @include mobile {
+                flex-direction: column;
+                width: 95%;
+                margin: 0 0 96px 0;
+            }
+        }
+
+        &-fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-input {
+            width: 358px;
+            min-height: 44px;
+            margin: 0 0 21px 0;    
+            padding: 0 0 0 16px;  
+            
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        &-legend {
+            @include font(16px, 19px, 300);
+            text-transform: uppercase;
+            margin: 0 0 21px 0;
+        }
+
+        &-button {
+            width: 100px;
+            min-height: 35px;
+            border: 1px solid $reg-grey;
+            color: $reg-grey;
+            margin: 0 0 57px 0;
+            background-color: $white;
+
+            @include tablet {
+                margin: 0 0 0 0;
+            }
+        }
+    }
+
+    &__total {
+        background-color: $background-color-li;
+        width: 360px;
+        min-height: 214px;
+        padding: 39px 0 0 0;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            margin: 40px 0 0 15px;
+            height: 214px;
+        }
+
+        @include mobile {
+            margin: 40px 0 0 0;
+            height: 214px;
+            width: 100%;
+        }
+
+        &-sub-sum {
+            @include font(11px, 13px);
+            margin: 0 34px 12px 0;
+            align-self: flex-end;
+            text-transform: uppercase;
+            color: $reg-grey;
+
+            &--price {
+                margin: 0 0 0 30px;
+            }
+        }
+
+        &-sum {
+            @include font(16px, 19px, 300);
+            margin: 0 34px 21px 0;
+            align-self: flex-end;
+            text-transform: uppercase;
+            color: $dark-blue;
+
+            &--price {
+                margin: 0 0 0 30px;
+                color: $dark-pink;
+            }
+        }
+
+        &-line {
+            margin: 0 0 17px 0;
+            align-self: center;
+        }
+
+        &-proceed-button {
+            width: 273px;
+            min-height: 50px;
+            align-self: center;
+            background-color: $dark-pink;
+            border: none;
+            color: $white;
+            text-transform: uppercase;
+            @include font(16px, 19px, 300);
+
+            @include mobile {
+                width: 73%;
+            }
+        }
+    }
+}
